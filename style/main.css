@@ -1,0 +1,360 @@
+body, html{
+	font-size: 14px;
+}
+
+h2{
+	text-align: center;
+	padding-top: 20px;
+	margin-left: 200px;
+}
+
+.header{
+	margin-right: 150px;
+	margin-left: 350px;
+}
+
+.header h3{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.header section{
+	margin-bottom: 20px;
+}
+
+.navbar{
+	margin-left: 350px;
+	margin-right: 120px;
+}
+
+.navbar h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.navbar hr{
+	border-top: 1px solid #eee;
+}
+
+.buttons{
+	margin-left: 350px;
+	margin-right: 150px;
+}
+
+.buttons h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.buttons h4{
+	text-align: left;
+}
+
+.btn.btn-default{
+	margin-bottom: 10px;
+	border-color: #CCC;
+}
+
+.btn.btn-primary{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.btn.btn-success{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.btn.btn-block{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.forms{
+	margin-left: 350px;
+	margin-right: 150px;
+}
+.forms.demo{
+	margin-left: 350px;
+	margin-right: 150px;
+}
+
+.forms hr{
+	margin-top: 20px;
+}
+
+.forms h3{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.forms h4{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav{
+	padding: 0 10px;
+	position: fixed;
+	top: 05%;
+	z-index: 1;
+}
+nav .box h1{
+	background: no-repeat 280px center #197FB7;
+	padding: 10px 8px 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+ul.menu {
+	list-style:none;
+}
+ul#sidemenu {
+	border-left: 3px solid #E7E7E7;	
+	margin: 10px 0 0 15px;
+	padding:1px 0 10px;
+  
+}
+
+ul#sidemenu li{
+  position: relative; 
+  left: -9px;
+}
+
+ul#sidemenu li a{
+    color: #BFC1C1;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    width: 80%;
+    padding: 0 23px;
+    font-weight: bold;
+}
+
+nav ul#sidemenu li a:hover{
+	color: #7C7C7C;
+}
+
+ul#sidemenu li a:hover, ul#sidemenu li a.menuitemselected, ul#sidemenu li.itemselected > a{
+	background: no-repeat left center;
+	color: #7C7C7C;
+	
+}
+
+ul#sidemenu li ul.submenu{
+	padding-left: 30px;
+}
+ul#sidemenu li ul.submenu li a{
+	margin: 5px 0;
+}
+ul#sidemenu li ul.submenu li a:hover, ul#sidemenu li ul.submenu li a.menuitemselected{
+	background: none;
+	color: #f96153;
+	
+}
+ul#sidemenu li a, ul#sidemenu li a:hover, ul#sidemenu li a.menuitemselected, ul#sidemenu ul.submenu a, ul#sidemenu ul.submenu a:visited, ul#sidemenu ul.submenu a:hover, ul#sidemenu ul.submenu a.menuitemselected{
+	transition: 200ms background-color;
+	-webkit-transition: 200ms background-color;
+}
+
+.notifications{
+	margin-right: 150px;
+	margin-left: 350px;
+}
+
+.notifications h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.notifications h4{
+	text-align: left;
+}
+
+.notifications hr{
+	border-top: 1px solid #eee;
+}
+
+.lists{
+	margin-right: 150px;
+	margin-left: 350px;
+}
+
+.lists h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.list.list-unstyled{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.headings{
+	margin-right: 150px;
+	margin-left: 350px;
+}
+
+.headings h3{
+	text-align: center;
+	margin-top: 75px;
+}
+
+.headings h4{
+	padding-top: 50px;
+}
+
+.bodytext{
+	margin-right: 150px;
+	margin-left: 350px;
+}
+
+.bodytext h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.bodytext h4{
+	padding-top: 50px;
+}
+
+.padding{
+	margin-left: 350px;
+	margin-right: 150px;
+}
+
+.padding h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.padding hr{
+	border-top: 1px solid #eee;
+}
+
+#exampleInputMessage1{
+	margin-bottom: 10px;
+}
+
+.fills{
+	margin-left: 350px;
+	margin-right: 150px;
+}
+
+.fills h3{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.fills hr{
+	border-top: 1px solid #eee;
+}
+
+.fill.gray{
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.fill.white{
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.fill.outline{
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.spacing.small{
+	font-size: 16px;
+}
+
+.spacing.medium{
+	font-size: 16px;
+}
+
+.spacing.large{
+	font-size: 16px;
+}
+
+.spacing.top{
+	font-size: 16px;
+}
+
+.spacing.bottom{
+	font-size: 16px;
+}
+
+.forms label{
+	font-size: 14px;
+}
+
+.form-control{
+	margin-bottom: 10px;
+}
+
+.select_form h4{
+	margin-top: 25px;
+}
+
+.modals h3{
+	text-align: center;
+}
+
+.modals h4{
+	margin-top: 25px;
+}
+
+.modals hr{
+	border-top: 1px solid #eee;
+}
+
+.thumbnails hr{
+	border-top: 1px solid #eee;
+}
+
+.thumbnail img{
+	margin-top: 10px;
+}
+
+.thumbnails h4{
+	margin-top: 25px;
+}
+
+.responsiveimg img{
+	width: 400px;
+	background-color: rgb(0, 64, 106);
+	margin-bottom: 10px;
+}
+
+.icons .fa{
+	margin-right: 10px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.checkbox.disabled{
+	margin-bottom: 25px;
+}
+
+.radio.disabled{
+	margin-bottom: 25px;
+}
+
+.autocode {
+	max-height: 200px;
+	overflow: scroll;
+}
+
+.icons h5{
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+}
+
+.icons p{
+	font-size: 12px;
+}

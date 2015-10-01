@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Brand Connect Styleguide</title>
+<!--<link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/bootstrap/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="style/main.webdam.css">
+<link rel="stylesheet" href="style/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="style/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/styleguide.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<h2>Brand Connect Styleguide</h2>
+
+<nav>
+  <div class="box">
+    <h1>Navigation</h1>
+  </div>
+  <ul id="sidemenu" class="menu">
+    <li><a href="#section_header">Header</a></li>
+    <li><a href="#section_headings">Headings</a></li>
+    <li><a href="#section_text">Text</a></li>
+    <li><a href="#section_lists">Lists</a></li>
+    <li><a href="#section_navbar">Dropdown Menus</a></li>
+    <li><a href="#section_buttons">Buttons</a></li>
+    <li><a href="#section_forms">Forms</a></li>
+    <li><a href="#section_notifications">Notification Messages</a></li>
+    <li><a href="#section_padding">Padding</a></li>
+    <li><a href="#section_fills">Fill</a></li>
+    <li><a href="#section_icons">Icons</a></li>
+    <li><a href="#section_thumbnails">Thumbnails</a></li>
+    <li><a href="#section_modals">Modals</a></li>
+    <li><a href="#section_responsiveimg">Responsive Images</a></li>
+  </ul>
+</nav>
+
+<div id="section_header" class="header">
+<h3>Header</h3>
+<div class="main_header">
+  <div class="demo">
+    <section id="header_background" class="bootstrap header-container header-fixed ng-scope" style="background-color: rgb(0, 64, 106);">
+    <header class="top-header clearfix ng-isolate-scope">
+      <div class="top-header-logo-wrap">
+              <a href="#landing" class="top-header-logo">
+                  <img id="header_logo" src="style/img/webdam_logo.png">
+              </a>
+        </div>
+
+          <div class="hidden menu-button material-icon hamburger">
+              <span class="first"></span>
+              <span class="second"></span>
+              <span class="third"></span>
+          </div>
+
+          <ul class="hidden-xs nav-left list-unstyled pull-left">
+        <li class="top-header-item-wrap">
+          <a href="#folders" id="navAssets" class="top-header-item" style="color: rgb(255, 255, 255);">Assets<em class="top-header-border"></em></a>
+        </li>
+                   <li class="feature_flag feature_brand_connect top-header-item-wrap">
+            <a href="#settings/brandconnect/bc-index" id="navBrands" class="top-header-item" style="color: rgb(255, 255, 255);">Brands<em class="top-header-border"></em></a>
+          </li>
+                
+                <li class="top-header-item-wrap dropdown">
+          <span class="top-header-item dropdown-toggle" id="navTeams" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: rgb(255, 255, 255);">
+            Teams
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="navTeams">
+            <li><a href="#settings/users/manage-users" onclick="WebDAM.closeTopNav()">Users</a></li>
+                  <li><a href="#settings/users/manage-groups" onclick="WebDAM.closeTopNav()" class="upsell-feature" upsell="GROUPS">Groups</a></li>
+          </ul>
+        </li>
+                        <li class="top-header-item-wrap dropdown">
+          <span class="top-header-item dropdown-toggle" id="navReports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: rgb(255, 255, 255);">
+            Reports
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="navReports">
+                        <li><a href="#settings/reports/download-tracker" onclick="WebDAM.closeTopNav()">Download Tracker</a></li>
+            <li><a href="#settings/reports/upload-tracker" onclick="WebDAM.closeTopNav()">Upload Tracker</a></li>
+                          <li class="freemium_disable"><a href="#settings/reports/login-tracker-basic" onclick="WebDAM.closeTopNav()">Login Tracker</a></li>
+                                                  <li class="feature_flag feature_request_manager"><a href="#settings/reports/request-manager" onclick="WebDAM.closeTopNav()">Request Manager</a></li>
+                                          <li><a href="#settings/reports/diskspace-usage" onclick="WebDAM.closeTopNav()">Diskspace Usage By Time</a></li>
+              <li><a href="#settings/reports/asset-uploads" onclick="WebDAM.closeTopNav()">Uploads By Time</a></li>
+            <li><a href="#settings/reports/asset-downloads" onclick="WebDAM.closeTopNav()">Downloads By Time</a></li>
+                          <li class="freemium_disable"><a href="#settings/reports/login-tracker" onclick="WebDAM.closeTopNav()">Logins By Time</a></li>
+                                                  <li><a href="#settings/reports/approvals" onclick="WebDAM.closeTopNav()">Approval Requests</a></li>
+                                      <li><a href="#settings/reports/social-publishing" onclick="WebDAM.closeTopNav()">Social Publishing</a></li>
+                              <li><a href="#settings/reports/most-downloaded-assets" onclick="WebDAM.closeTopNav()">Most Downloaded Assets</a></li>
+
+                                              <li class="nav-group-parent"><a class="top-nav-dropdown-parent" nav-group-parent="auditlog" href="javascript:WebDAM.collapseMainNavGroups('auditlog')">Audit Logs <i class="top-nav-dropdown-collapse">+</i></a></li>
+                  <li nav-group="auditlog" class="nav-group-children hidden"><a href="#settings/auditlogger/al-assets" onclick="WebDAM.closeTopNav()">Assets</a></li>
+                  <li nav-group="auditlog" class="nav-group-children hidden"><a href="#settings/auditlogger/al-folders" onclick="WebDAM.closeTopNav()">Folders</a></li>
+                  <li nav-group="auditlog" class="nav-group-children hidden"><a href="#settings/auditlogger/al-permissions" onclick="WebDAM.closeTopNav()">Permissions</a></li>
+                        </ul>
+        </li>
+                     
+          </ul>
+
+          <ul class="nav-right list-unstyled pull-right">
+            
+                    <li class="top-header-item-wrap dropdown">
+          <span class="top-header-item top-header-item-alt dropdown-toggle" id="navSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: rgb(255, 255, 255);">
+              <i class="fa fa-gear nav-icon"></i>
+            </span>
+          <ul class="dropdown-menu pull-right" aria-labelledby="navSettings">
+                          <li><a href="#settings/settings/preferences" onclick="WebDAM.closeTopNav()">System Preferences</a></li>
+                                    <li><a href="#settings/settings/metadata-schema" onclick="WebDAM.closeTopNav()">Metadata Schema</a></li>
+                               <li class="feature_flag feature_brand_connect"><a href="#settings/brandconnect/bc-index" onclick="WebDAM.closeTopNav()">Brand Connect</a></li>
+                                  <li class="feature_flag feature_brand_portal"><a href="#settings/brandportal/settings" onclick="WebDAM.closeTopNav()">Brand Portal Preferences</a></li>
+                      </ul>
+        </li>
+                <li class="top-header-item-wrap dropdown">
+              <span class="top-header-item top-header-item-alt dropdown-toggle" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: rgb(255, 255, 255);">
+              Vasavi <span class="caret"></span>
+            </span>
+          <ul class="dropdown-menu pull-right" aria-labelledby="dropdownAccount">
+                          <li><a href="javascript:WebDAM.getAccountSubscription();" onclick="WebDAM.closeTopNav()">Subscription</a></li>
+                                    <li><a href="javascript:WebDAM.newUser(82040, 1)" onclick="WebDAM.closeTopNav()">Profile</a></li>
+                          <li><a href="javascript:WebDAM.addressBook.showAddressBook()" onclick="WebDAM.closeTopNav()">Address Book</a></li>
+                <li><a href="javascript:WebDAM.viewDownloadHistory(82040)" onclick="WebDAM.closeTopNav()">Download History</a></li>
+            <li><a href="" target="_blank">Help</a></li>
+                      <li><a href="javascript:WebDAM.addOnSettings()" onclick="WebDAM.closeTopNav()">Add-on Settings</a></li>
+                                    <li><a href="/logout.php">Logout</a></li>
+           </ul>
+            </li>
+          </ul>
+    </header>
+  </section>
+</div>
+</div>
+</div>
+
+<div id="section_headings" class="headings">  
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Headings</h3>
+      <hr>
+      <div class="demo">
+        <h4 class="heading small">Small heading</h4>
+      </div>
+      <div class="demo">
+        <h4 class="heading medium">Medium heading</h4>
+      </div>
+      <div class="demo">
+        <h4 class="heading large">Large heading</h4>
+      </div>
+      <div class="demo">
+        <h4 class="heading xlarge">Extra large heading</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section_text" class="bodytext">  
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Text</h3>
+      <hr>
+      <div class="demo">
+        <h4 class="text small">Small text</h4>
+      </div>
+      <div class="demo">
+        <h4 class="text medium">Medium text</h4>
+      </div>
+      <div class="demo">
+        <h4 class="text large">Large text</h4>
+      </div>
+      <div class="demo">
+        <h4 class="text xlarge">Extra large text</h4>
+      </div>
+      <div class="demo">
+        <h4 class="text gray">Gray text</h4>
+      </div>
+      <div class="demo">
+        <h4 class="text allcaps">ALLCAPS text</h4>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div id="section_lists" class="lists">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Lists</h3>
+      <hr>
+      <div id="section_normal" class="normal">
+      <h4>Normal</h4>
+      <div class="demo">
+      <ul class="list list-unstyled">
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+      </ul>
+      </div>
+      </div>
+      <div id="section_bullet" class="bullet">
+      <h4>Bullet</h4>
+      <div class="demo">
+      <ul class="list list-unstyled bullet">
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+      </ul>
+      </div>
+      </div>
+      <div id="section_outline" class="outline">
+      <h4>Outline</h4>
+      <div class="demo">
+      <ul class="list list-unstyled outline">
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+        <li>an item</li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div id="section_navbar" class="navbar">
+
+  <h3>Dropdown Menu</h3>
+  <hr>
+  <div class="demo">
+  <div class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Another action</a></li>
+        </ul>
+  </div>
+</div>
+</div>
+
+
+<div id="section_buttons" class="buttons">
+  <h3>Buttons</h3>
+  <hr>
+  <h4>Standard Button</h4>
+  <div class="demo">
+    <button class="btn btn-default" type="submit">Edit</button>
+  </div>
+  <h4>Primary Button</h4>
+  <div class="demo">
+    <button class="btn btn-primary" type="submit">Preview</button>
+  </div>
+  <h4>Success Button</h4>
+  <div class="demo">
+    <button class="btn btn-success" type="submit">Publish</button>
+  </div>
+  <h4>Full Button</h4>
+  <div class="demo">
+    <button class="btn btn-block btn-primary" type="submit">Login</button>
+  </div>
+</div>
+
+
+
+<div id="section_forms" class="forms">
+
+<h3>Forms</h3>
+<hr>
+
+<div class="demo">
+<div class="form">
+
+  <div class="row">
+    <div class="form-group">
+      <div class="col-md-4">
+        <label for="exampleInputEmail1"><strong>To</strong></label>
+      </div>
+      <div class="col-md-8">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email Address">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <div class="col-md-4">
+        <label for="exampleInputSubject1"><strong>Subject</strong></label>
+      </div>
+      <div class="col-md-8">
+        <input type="subject" class="form-control" id="exampleInputSubject1">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <div class="col-md-4">
+        <label for="exampleInputMessage1"><strong>Message</strong></label>
+      </div>
+      <div class="col-md-8">
+        <input type="message" class="form-control" id="exampleInputMessage1">
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<h4>Horizontal Forms</h4>
+<div class="demo">
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="select_form">
+<h4>Selects</h4>
+<div class="demo">
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+</div>
+</div>
+
+<h4>Checkboxes and Radio Buttons</h4>
+<div class="demo">
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Option two is disabled
+  </label>
+</div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Option three is disabled
+  </label>
+</div>
+</div>
+
+</div>
+
+<div id="section_notifications"class="notifications">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Notification messages</h3>
+        <hr>
+        <h4>alert</h4>
+        <div class="demo">
+          <div class="notification notification-alert">
+            <p class="bg-warning">This is an alert message.</p>
+          </div>
+        </div>
+        <h4>success</h4>
+        <div class="demo">
+          <div class="notification notification-success">
+            <p class="bg-success">This is a success message.</p>
+          </div>
+        </div>
+        <h4>error</h4>
+        <div class="demo">
+          <div class="notification notification-error">
+            <p class="bg-danger">This is an error message.</p>
+          </div>
+        </div>
+        <h4>standard</h4>
+        <div class="demo">
+          <div class="notification notification-message">
+            <p class="bg-info">This is a standard message.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="section_padding" class="padding">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Padding</h3>
+      <hr>
+      <div class="demo">
+        <div class="spacing small">small padding</div>
+      </div>
+      <div class="demo">
+        <div class="spacing medium">medium padding</div>
+      </div>
+      <div class="demo">
+        <div class="spacing large">large padding</div>
+      </div>
+      <div class="demo">
+        <div class="spacing top">top padding only</div>
+      </div>
+      <div class="demo">
+        <div class="spacing bottom">bottom padding only</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="section_fills" class="fills">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Fill</h3>
+        <hr>
+        <div class="demo">
+          <div class="fill gray">gray fill</div>
+        </div>
+        <div class="demo">
+          <div class="fill white">white fill</div>
+        </div>
+        <div class="demo">
+          <div class="fill outline">outline fill</div>
+        </div>
+      </div>
+    </div>
+
+  <div id="section_icons" class="icons">
+    <div class="row">
+        <h3>Icons</h3>
+        <hr>
+        <h4><strong>Font Awesome Icons</strong></h4>
+        <h5>Important!</h5>
+        <p>To increase icon sizes relative to their container, use the fa-lg (33% increase), fa-2x, fa-3x, fa-4x, or fa-5x classes.
+          <div class="demo">
+            <i class="fa fa-camera-retro"></i> original size
+            <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+          </div>
+        </p>
+        <h4>Header Icons</h4>
+        <div class="demo">
+        <i class="fa fa-th fa-5x"></i> Lightbox Icon
+        <i class="fa fa-bell fa-5x"></i> Notifications Icon
+        <i class="fa fa-user fa-5x"></i> User Icon
+        <i class="fa fa-check-square fa-5x"></i> Active Icon
+        </div>
+        <h4>Assets Icons</h4>
+        <div class="demo">
+        <i class="fa fa-sort-asc facet-arrow fa-rotate-180 fa-5x"></i> Caret Icon
+        <i class="fa fa-sort-asc facet-arrow fa-rotate-270 fa-5x"></i> Caret Icon
+        <i class="fa fa-th-large fa-5x"></i> Grid View Icon
+        <i class="fa fa-download fa-5x"></i> Download Icon
+        <i class="fa fa-arrow-left fa-5x"></i> Left Arrow Icon
+        <i class="fa fa-arrow-right fa-5x"></i> Right Arrow Icon
+        <i class="fa fa-eye fa-5x"></i> Watch Icon
+        </div>
+        <h4>Brand Guidelines Icons</h4>
+        <div class="demo">
+        <i class="fa fa-arrows fa-5x"></i> Move Icon
+        <i class="fa fa-pencil fa-5x"></i> Edit Icon
+        <i class="fa fa-trash fa-5x"></i> Delete Icon
+        <i class="fa fa-wrench fa-5x"></i> Manage Icon
+        <i class="fa fa-plus fa-5x"></i> Add Color Icon
+        <i class="fa fa-exchange fa-5x"></i> Layout Icon
+        <i class="fa fa-expand fa-5x"></i> Resize Icon
+        <i class="fa fa-pencil-square-o fa-5x"></i>Edit Color Icon
+        <i class="fa fa-share fa-5x"></i>Share Icon
+        <i class="fa fa-chevron-down fa-5x"></i> Caret Icon
+        <i class="fa fa-camera fa-5x"></i> Camera Icon
+        <i class="fa fa-align-left fa-5x"></i> Description Icon
+        <i class="fa fa-file fa-5x"></i> Document Icon
+        </div>
+
+    </div>
+  </div>
+
+
+  <div id="section_thumbnails" class="thumbnails">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Thumbnails</h3>
+        <hr>
+        <h4>Large Thumbnail</h4>
+          <div class="demo">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/220x250" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/220x250" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/220x250" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h4>Medium Thumbnail</h4>
+          <div class="demo">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/150x180" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/150x180" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/150x180" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h4>Small Thumbnail</h4>
+          <div class="demo">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/100x110" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/100x110" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/100x110" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h4>List Thumbnail</h4>
+          <div class="demo">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/80x80" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/80x80" alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+              <img src="http://placehold.it/80x80" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+<div id="section_modals" class="modals">
+  <h3>Modals</h3>
+  <hr>
+
+<div class="demo"> 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Click for Modal
+</button>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="heading large centered">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          This is some body text.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4>Optional Sizes</h4>
+<div class="demo">
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 class="heading large centered">Modal title</h4>
+      <div class="modal-body">
+        <p>This is a Large Modal</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 class="heading large centered">Modal title</h4>
+      <div class="modal-body">
+        <p>This is a Small Modal</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div> 
+
+<div id="section_responsiveimg" class="responsiveimg">
+  <h3>Responsive Images</h3>
+  <hr>
+  <div class="demo">
+    <img src="style/img/webdam_logo.png" class="img-responsive" alt="Responsive image">
+  </div>
+</div>
+
+</body>
+</html>
